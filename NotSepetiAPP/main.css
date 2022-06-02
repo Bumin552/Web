@@ -1,0 +1,81 @@
+:root{
+    --main-color:rgba(39, 60, 117,1.0)
+    --main-color-light:rgba(39, 60, 117,0.5)
+    --accent-color:rgba(127, 143, 166,1.0)
+    --accent-color-light:rgba(127, 143, 166,0.5)
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: bisque;
+    background-repeat: no-repeat;
+}
+.main-title{
+    font-size: 3rem;
+    
+}
+.header, .gorev-form{
+    min-height: 20vh;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    padding: 0.5rem;
+    font-size:1.5rem;
+    border:none;
+    background-color: white;
+    outline: none;
+}
+.btnekle{
+    color:var(--main-color);
+    cursor: pointer;
+}
+.btnekle:hover{
+    color:white;
+    background-color: var(--accent-color);
+}
+.gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gorev-listesi{
+    list-style: none;
+    min-width: 40px;
+
+}
+.gorev-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem; 
+    font-size: 1.2rem;
+    background-color: white;   
+}
+.gorev-tanim{
+    flex: 1;
+    padding: 0.5rem;
+}
+.gorev-btn{
+    background-color: var(--accent-color);
+    outline: none;
+    border: none;font-size: 1.2rem;    
+    padding: 0.5rem;    
+}
+.gorev-sil{
+    background-color: var(--accent-color);
+}
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fa-solid{
+    pointer-events: none;
+}
